@@ -1,0 +1,17 @@
+{
+  "name": "Globify Radio",
+  "short_name": "Globify",
+  "description": "Internationale Radiosender aus aller Welt",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f9fa",
+  "theme_color": "#3a86ff",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
