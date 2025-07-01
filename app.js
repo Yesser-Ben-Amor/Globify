@@ -20,11 +20,11 @@ const radioStations = {
 
     // Deutschland
     germany1: {
-        url: "https://st01.sslstream.dlf.de/dlf/01/128/mp3/stream.mp3?aggregator=web",
+        url: "https://st01.sslstream.dlf.de/dlf/01/high/mp3/stream.mp3",
         name: "Deutschlandfunk"
     },
     germany2: {
-        url: "https://streams.radiobob.de/bob-national/mp3-128/streams.radiobob.de/",
+        url: "https://streams.radiobob.de/bob-live/mp3-192/mediaplayer",
         name: "Radio Bob"
     },
     germany3: {
@@ -32,7 +32,7 @@ const radioStations = {
         name: "Radio Gong Würzburg"
     },
     germany4: {
-        url: "https://dispatcher.rndfnk.com/br/br24/live/mp3/mid",
+        url: "https://dispatcher.rndfnk.com/br/br24/live/mp3/high",
         name: "B5 aktuell (BR24)"
     },
 
