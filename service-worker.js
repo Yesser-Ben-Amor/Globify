@@ -1,14 +1,14 @@
 // Service Worker für Globify Radio PWA
 const CACHE_NAME = 'globify-radio-v1';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/carousel.css',
-  '/responsive.css',
-  '/app.js',
-  '/carousel.js',
-  '/manifest.json',
+  '/Globify/',
+  '/Globify/index.html',
+  '/Globify/style.css',
+  '/Globify/carousel.css',
+  '/Globify/responsive.css',
+  '/Globify/app.js',
+  '/Globify/carousel.js',
+  '/Globify/manifest.json',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'
 ];
 
