@@ -20,6 +20,17 @@ installButton.style.display = 'none';
 installButton.classList.add('install-button');
 installButton.textContent = 'Globify installieren';
 
+// Globale Variable für den manuellen Installationsbutton
+window.manualPwaInstall = function() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    return true;
+  } else {
+    console.log('Keine Installation möglich - deferredPrompt nicht verfügbar');
+    return false;
+  }
+};
+
 // Event-Listener für "beforeinstallprompt" Event
 window.addEventListener('beforeinstallprompt', (e) => {
   // Standardinstallationsaufforderung verhindern
