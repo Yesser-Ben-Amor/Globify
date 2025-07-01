@@ -2,7 +2,7 @@
   "name": "Globify Radio",
   "short_name": "Globify",
   "description": "Internationale Radiosender aus aller Welt",
-  "start_url": "/",
+  "start_url": "/Globify/",
   "display": "standalone",
   "background_color": "#f8f9fa",
   "theme_color": "#3a86ff",
