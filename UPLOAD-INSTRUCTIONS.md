@@ -2,12 +2,14 @@
 
 Diese Anleitung erklärt, wie du die Globify Desktop App auf Google Drive hochladen und den Download-Link in der Webseite aktualisieren kannst.
 
-## Schritt 1: Hochladen der ZIP-Datei auf Google Drive
+## Schritt 1: Hochladen der ZIP-Dateien auf Google Drive
 
 1. Melde dich bei deinem Google Drive-Konto an: [drive.google.com](https://drive.google.com)
 2. Klicke auf "Neu" > "Datei hochladen"
-3. Wähle die Datei `/Users/Cutvert/Desktop/radio-desktop/dist/Globify-Windows.zip` aus
-4. Warte, bis der Upload abgeschlossen ist
+3. Wähle die folgenden Dateien aus und lade sie nacheinander hoch:
+   - Windows-Version: `/Users/Cutvert/Desktop/radio-desktop/dist/Globify-Windows.zip`
+   - Mac-Version: `/Users/Cutvert/Desktop/radio/Globify-Mac.zip`
+4. Warte, bis die Uploads abgeschlossen sind
 
 ## Schritt 2: Freigabelink erstellen
 
@@ -16,11 +18,13 @@ Diese Anleitung erklärt, wie du die Globify Desktop App auf Google Drive hochla
 3. Stelle sicher, dass die Zugriffseinstellung auf "Jeder mit dem Link kann anzeigen" gesetzt ist
 4. Kopiere den Link
 
-## Schritt 3: Link in der Webseite aktualisieren
+## Schritt 3: Links in der Webseite aktualisieren
 
 1. Öffne die Datei `/Users/Cutvert/Desktop/radio/download-page.html`
-2. Suche nach dem Platzhalter-Link: `https://drive.google.com/file/d/PLACEHOLDER_LINK/view?usp=sharing`
-3. Ersetze diesen durch den kopierten Link
+2. Suche nach den Platzhalter-Links:
+   - Für Windows: `https://drive.google.com/file/d/PLACEHOLDER_WINDOWS_LINK/view?usp=sharing`
+   - Für Mac: `https://drive.google.com/file/d/PLACEHOLDER_MAC_LINK/view?usp=sharing`
+3. Ersetze diese durch die kopierten Links
 4. Speichere die Datei
 
 ## Schritt 4: Änderungen committen und pushen
