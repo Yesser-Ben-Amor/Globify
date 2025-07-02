@@ -9,12 +9,13 @@ Diese Anleitung hilft dir dabei, die Globify Desktop App auf deinem Mac-Computer
 
 ## Installation
 
-### Schritt 1: Entpacke die ZIP-Datei
+### Schritt 1: Öffne die DMG-Datei
 
-Nachdem du die `Globify-Mac.zip` heruntergeladen hast:
+Nachdem du die `Globify-1.0.0.dmg` heruntergeladen hast:
 
-1. Doppelklick auf die ZIP-Datei, um sie zu entpacken
-2. Die App "Globify" wird im selben Ordner erscheinen
+1. Doppelklick auf die DMG-Datei, um sie zu öffnen
+2. Ein Fenster erscheint mit dem Globify-Icon und einem Ordner-Symbol für den Programme-Ordner
+3. Ziehe das Globify-Icon auf das Programme-Ordner-Symbol
 
 ### Schritt 2: App-Sicherheitseinstellungen
 
