@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globify Desktop App - Download</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .download-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .download-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .download-option {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .download-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .download-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+        
+        .download-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+        
+        .instructions {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        .back-button {
+            display: inline-block;
+            margin-top: 30px;
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .back-button:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1><i class="fas fa-globe-americas"></i> Globify</h1>
+        </div>
+        <p class="subtitle">Desktop App Download</p>
+    </header>
+
+    <div class="download-container">
+        <h2>Wähle deine Version</h2>
+        <p>Die Globify Desktop App ist für Windows und Mac verfügbar. Wähle die Version, die zu deinem Betriebssystem passt.</p>
+        
+        <div class="download-options">
+            <div class="download-option">
+                <div class="download-icon">
+                    <i class="fab fa-windows"></i>
+                </div>
+                <h3>Windows</h3>
+                <p>Für Windows 10 und neuer</p>
+                <a href="https://drive.google.com/file/d/PLACEHOLDER_LINK/view?usp=sharing" class="download-button" target="_blank"><i class="fas fa-download"></i> Windows Version</a>
+                <p><a href="INSTALL-WINDOWS.md" target="_blank">Installationsanleitung</a></p>
+            </div>
+            
+            <div class="download-option">
+                <div class="download-icon">
+                    <i class="fab fa-apple"></i>
+                </div>
+                <h3>Mac</h3>
+                <p>Für macOS 10.13 und neuer</p>
+                <a href="https://github.com/Yesser-Ben-Amor/Globify/tree/desktop" class="download-button" target="_blank"><i class="fas fa-code-branch"></i> Quellcode</a>
+                <p>Mac-Version wird bald verfügbar sein</p>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>Installationshinweise</h3>
+            <p>Nach dem Herunterladen:</p>
+            <ol>
+                <li>Entpacke die ZIP-Datei in einen Ordner deiner Wahl</li>
+                <li>Für Windows: Öffne den Ordner "win-unpacked" und starte die Datei "Globify.exe"</li>
+                <li>Für Mac: Folge den Anweisungen im GitHub-Repository</li>
+            </ol>
+            <p>Bei Problemen oder Fragen besuche bitte das <a href="https://github.com/Yesser-Ben-Amor/Globify/issues" target="_blank">GitHub-Repository</a>.</p>
+        </div>
+        
+        <a href="index.html" class="back-button"><i class="fas fa-arrow-left"></i> Zurück zur Webversion</a>
+    </div>
+</body>
+</html>
