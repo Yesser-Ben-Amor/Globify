@@ -18,14 +18,28 @@ Nachdem du die `Globify-Mac.zip` heruntergeladen hast:
 
 ### Schritt 2: App-Sicherheitseinstellungen
 
-Da die App nicht aus dem Mac App Store stammt, musst du möglicherweise die Sicherheitseinstellungen anpassen:
+Da die App nicht aus dem Mac App Store stammt und nicht von einem verifizierten Entwickler signiert ist, wird macOS die App standardmäßig blockieren. So kannst du die App trotzdem öffnen:
 
-1. Versuche, die App zu öffnen, indem du auf das Globify-Icon doppelklickst
-2. Falls eine Sicherheitswarnung erscheint:
+1. **Wenn du die Fehlermeldung "Du kannst das Programm 'Globify' nicht öffnen, da es möglicherweise beschädigt oder unvollständig ist" siehst:**
+   - Schließe die Fehlermeldung
+   - Rechtsklick (oder Ctrl+Klick) auf die Globify.app
+   - Wähle "Öffnen" aus dem Kontextmenü
+   - Klicke im erscheinenden Dialog auf "Öffnen"
+
+2. **Wenn das nicht funktioniert:**
    - Öffne die Systemeinstellungen
-   - Gehe zu "Sicherheit & Datenschutz"
-   - Klicke auf "Öffnen erlauben" für Globify
-   - Alternativ: Rechtsklick (oder Ctrl+Klick) auf die App und wähle "Öffnen"
+   - Gehe zu "Sicherheit & Datenschutz" > Reiter "Allgemein"
+   - Klicke auf das Schloss-Symbol unten links und gib dein Passwort ein
+   - Unter "App-Downloads erlauben von:" wähle "Beliebige Quelle" (oder klicke auf "Öffnen dennoch erlauben" für Globify, falls angezeigt)
+   - Versuche erneut, die App zu öffnen
+
+3. **Als letzte Möglichkeit:**
+   - Öffne das Terminal (in Programme > Dienstprogramme)
+   - Führe folgenden Befehl aus (ersetze den Pfad entsprechend):
+     ```
+     xattr -cr /Pfad/zu/Globify.app
+     ```
+   - Versuche erneut, die App zu öffnen
 
 ### Schritt 3: App in den Programme-Ordner verschieben (optional)
 
