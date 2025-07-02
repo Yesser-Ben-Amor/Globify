@@ -1,0 +1,44 @@
+{
+  "name": "worldradio-desktop",
+  "version": "1.0.0",
+  "description": "Internationale Radio-App als Desktop-Anwendung",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win",
+    "build:linux": "electron-builder --linux"
+  },
+  "keywords": [
+    "radio",
+    "desktop",
+    "electron",
+    "music"
+  ],
+  "author": "Ben Amor",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron/packager": "^18.3.6",
+    "electron": "^29.1.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.benamor.worldradio",
+    "productName": "WorldRadio",
+    "mac": {
+      "category": "public.app-category.music"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    }
+  }
+}

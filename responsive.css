@@ -1,0 +1,15 @@
+/* Responsive CSS für Globify Radio App */
+/* Einfache Anpassung für kleine Bildschirme */
+
+/* Für kleine Bildschirme und Handys */
+@media screen and (max-width: 768px) {
+    /* Audio-Player und Mixer untereinander anordnen */
+    .audio-controls-container {
+        flex-direction: column;
+    }
+    
+    .player-container, .mixer-container {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
