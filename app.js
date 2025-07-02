@@ -17,6 +17,10 @@ const radioStations = {
         url: "https://radio.mosaiquefm.net/mosagold",
         name: "Mosaique Gold"
     },
+    tunisia5: {
+        url: "https://radio.mosaiquefm.net/mosadj",
+        name: "Mosaique DJ"
+    },
 
     // Deutschland
     germany1: {
