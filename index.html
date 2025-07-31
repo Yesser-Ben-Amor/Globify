@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- SSH Deployment Test -->
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -9,29 +10,79 @@
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="icons/icon.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=1.0.1">
-    <link rel="stylesheet" href="carousel.css?v=1.0.1">
-    <link rel="stylesheet" href="responsive.css?v=1.0.1">
+    <link rel="stylesheet" href="style.css?v=1.0.3">
+    <link rel="stylesheet" href="carousel.css?v=1.0.3">
+    <link rel="stylesheet" href="responsive.css?v=1.0.3">
+    <style>
+        /* Inline-Styles für den Header und das Karussell */
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+        
+        .carousel-wrapper {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+        
+        .header-carousel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 0;
+            padding: 5px 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .header-carousel .indicator {
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .header-carousel .indicator:hover {
+            transform: scale(1.2);
+        }
+        
+        .header-carousel .indicator.active {
+            transform: scale(1.2);
+            text-shadow: 0 0 10px rgba(58, 134, 255, 0.8);
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="header-container">
             <h1><i class="fas fa-globe-americas"></i> Globify</h1>
+            
+            <!-- Separater Div für das Karussell -->
+            <div class="carousel-wrapper">
+                <div class="carousel-indicators header-carousel">
+                    <span class="indicator active" data-index="0">🇹🇳</span>
+                    <span class="indicator" data-index="1">🇩🇪</span>
+                    <span class="indicator" data-index="2">🇫🇷</span>
+                    <span class="indicator" data-index="3">🇮🇹</span>
+                    <span class="indicator" data-index="4">🌎</span>
+                </div>
+            </div>
+            
             <a href="./download-page.html" class="download-button"><i class="fas fa-download"></i> App downloaden</a>
         </div>
-        <p class="subtitle">Entdecken Sie internationale Radiosender aus aller Welt</p>
     </header>
 
     <div class="carousel-container">
         <div class="carousel-navigation">
             <button id="prevBtn" class="carousel-nav-btn"><i class="fas fa-chevron-left"></i></button>
-            <div class="carousel-indicators">
-                <span class="indicator active" data-index="0">🇹🇳</span>
-                <span class="indicator" data-index="1">🇩🇪</span>
-                <span class="indicator" data-index="2">🇫🇷</span>
-                <span class="indicator" data-index="3">🇮🇹</span>
-                <span class="indicator" data-index="4">🌎</span>
-            </div>
             <button id="nextBtn" class="carousel-nav-btn"><i class="fas fa-chevron-right"></i></button>
         </div>
         
@@ -166,8 +217,8 @@
 
     <script src="visualizer.js"></script>
     <script src="mixer.js"></script>
-    <script src="app.js?v=1.0.1"></script>
-    <script src="carousel.js?v=1.0.1"></script>
-    <script src="pwa.js?v=1.0.1"></script>
+    <script src="app.js?v=1.0.3"></script>
+    <script src="carousel.js?v=1.0.3"></script>
+    <script src="pwa.js?v=1.0.3"></script>
 </body>
 </html>
